@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 150px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+.buttons button {
+    
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.login {
+    background: none;
+    color: white;
+}
+
+.register {
+    background: yellow;
+    color: black;
+}
+
+
+
+.search-bar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background: yellow;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+.upload-cv {
+    background: yellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#fileNameDisplay {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* .wave-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;  /* Increased height for better visibility */
+    
+    .wave-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .wave-footer path {
+        animation: waveMove 4s infinite linear;
+    }
+    
+    @keyframes waveMove {
+        0% {
+            d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
+        }
+        50% {
+            d: path("M0,144L48,160C96,176,192,208,288,202.7C384,197,480,171,576,144C672,117,768,91,864,101.3C960,112,1056,160,1152,181.3C1248,203,1344,192,1392,186.7L1440,176L1440,320L0,320Z");
+        }
+        100% {
+            d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
+        }
+    }
+
+

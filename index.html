@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal UI</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Superio</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Find Jobs</a></li>
+                <li><a href="#">Employers</a></li>
+
+                <li><a href="#">Candidates</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Pages</a></li>
+            </ul>
+        </nav>
+      
+        <div class="buttons">
+            <a href="login.html"><button class="login">Login</button></a>
+            <a href="register.html"><button class="register">Register</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>There Are <span class="count">93,178</span> Postings Here For You!</h1>
+            <p>Find Jobs, Employment & Career Opportunities</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Job title, keywords...">
+                <input type="text" placeholder="Location">
+                <button>Find Jobs</button>
+            </div>
+            <p class="popular-searches">
+                Popular Searches: Designer, Developer, Web, iOS, PHP, Senior, Engineer
+            </p>
+        </section>
+
+        <section class="candidates">
+
+            <input type="file" id="resumeUpload" hidden>
+
+            <button class="upload-cv" id="uploadBtn">Upload Your CV</button>
+
+            <!-- Placeholder for showing selected file name -->
+            <p id="fileNameDisplay"></p>
+        </section>
+
+
+    </main>
+    <!-- <div class="bottom-design"></div> -->
+    <footer>
+        <svg class="wave-footer" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="#d9b26d" fill-opacity="1"
+                d="M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z">
+            </path>
+        </svg>
+    </footer>
+
+</body>
+
+</html>

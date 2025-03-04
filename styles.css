@@ -1,0 +1,150 @@
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+button:hover {
+    background-color: #e6b800;
+}
+
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+
+/* .wave-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;  /* Increased height for better visibility */
+    .wave-footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .wave-footer path {
+        animation: waveMove 4s infinite linear;
+    }
+    
+    @keyframes waveMove {
+        0% {
+            d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
+        }
+        50% {
+            d: path("M0,144L48,160C96,176,192,208,288,202.7C384,197,480,171,576,144C672,117,768,91,864,101.3C960,112,1056,160,1152,181.3C1248,203,1344,192,1392,186.7L1440,176L1440,320L0,320Z");
+        }
+        100% {
+            d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
+        }
+    }
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    margin-right: 100px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    /* font-size: 16px\ */
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+  
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Adjust body padding to prevent content from being hidden under the fixed navbar */
+body {
+    padding-top: 70px;
+    background: linear-gradient(to bottom, #144a96, #144a96 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  
+}
