@@ -1,18 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
 </head>
+
 <body class="auth-page">
 
-    <!-- Header -->
-    <header>
+
+    <header class="navbar-container">
         <div class="logo">Superio</div>
-        <nav>
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <nav class="nav-links" id="nav-links">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Find Jobs</a></li>
@@ -22,23 +24,22 @@
                 <li><a href="#">Pages</a></li>
             </ul>
         </nav>
-       
     </header>
 
-    <!-- Registration Form -->
+
     <div class="container">
         <h2>Register</h2>
-        <form id="register-form">
-            <input type="email" id="register-email" placeholder="Email ID" required>
-            <input type="password" id="register-password" placeholder="Create Password" required>
-            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-            <button type="submit">Submit</button>
-            <p class="message" id="register-message"></p>
-        </form>
+
+        <input type="email" id="register-email" placeholder="Email ID" required>
+        <input type="password" id="register-password" placeholder="Create Password" required>
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="submit">Submit</button>
+        <p class="message" id="register-message"></p>
+
         <p>Already have an account? <a href="login.html">Login here</a></p>
     </div>
 
-    <!-- Footer -->
+
     <footer>
         <svg class="wave-footer" viewBox="0 0 1440 320" preserveAspectRatio="none">
             <path fill="#d9b26d" fill-opacity="1"
@@ -47,7 +48,12 @@
         </svg>
     </footer>
 
-    <script src="script.js"></script>
-
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-links");
+            menu.classList.toggle("active");
+        }
+    </script>
 </body>
+
 </html>
