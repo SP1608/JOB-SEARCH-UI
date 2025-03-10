@@ -1,5 +1,6 @@
-/* General Styles */
-body {
+
+
+ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -8,14 +9,17 @@ body {
     text-align: center;
 }
 
-/* Header */
-header {
+/* Navbar */
+.navbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    margin-bottom: 150px;
+    padding: 15px 20px;
+    background: #0d47a1;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -23,47 +27,80 @@ header {
     font-weight: bold;
 }
 
-nav ul {
+.nav-links ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     gap: 20px;
-
 }
 
-nav ul li {
+.nav-links ul li {
     display: inline;
 }
 
-nav ul li a {
+.nav-links ul li a {
     text-decoration: none;
     color: white;
-    
 }
 
 .buttons button {
-    
     padding: 10px 15px;
     border: none;
     cursor: pointer;
 }
 
-.login {
+.menu-btn {
     background: none;
+    border: none;
     color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
 }
 
-.register {
-    background: yellow;
-    color: black;
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #0d47a1;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links ul li {
+        padding: 10px 0;
+    }
 }
 
-
+/* Main Content */
+.text-content {
+    text-align: left;
+    padding: 20px;
+}
 
 .search-bar {
-    margin: 20px auto;
     display: flex;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .search-bar input {
@@ -80,50 +117,37 @@ nav ul li a {
     cursor: pointer;
 }
 
-
-.upload-cv {
-    background: yellow;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+/* Images */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-#fileNameDisplay {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #fff;
-}
-
-/* .wave-footer {
-    position: absolute;
+/* Footer */
+.wave-footer {
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 200px;  /* Increased height for better visibility */
-    
-    .wave-footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 200px;
-        overflow: hidden;
-    }
-    
-    .wave-footer path {
-        animation: waveMove 4s infinite linear;
-    }
-    
-    @keyframes waveMove {
-        0% {
-            d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
-        }
-        50% {
-            d: path("M0,144L48,160C96,176,192,208,288,202.7C384,197,480,171,576,144C672,117,768,91,864,101.3C960,112,1056,160,1152,181.3C1248,203,1344,192,1392,186.7L1440,176L1440,320L0,320Z");
-        }
-        100% {
-            d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
-        }
-    }
+    height: 200px;
+    overflow: hidden;
+}
 
+.wave-footer path {
+    animation: waveMove 4s infinite linear;
+}
 
+@keyframes waveMove {
+    0% {
+        d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
+    }
+    50% {
+        d: path("M0,144L48,160C96,176,192,208,288,202.7C384,197,480,171,576,144C672,117,768,91,864,101.3C960,112,1056,160,1152,181.3C1248,203,1344,192,1392,186.7L1440,176L1440,320L0,320Z");
+    }
+    100% {
+        d: path("M0,128L48,138.7C96,149,192,171,288,154.7C384,139,480,85,576,64C672,43,768,53,864,85.3C960,117,1056,171,1152,176C1248,181,1344,139,1392,117.3L1440,96L1440,320L0,320Z");
+    }
+}
+
+  
